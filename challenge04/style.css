@@ -45,9 +45,18 @@ h2 {
   margin: 0 auto;
 }
 
-.container--dark{
-    background-color: #136C72;
-    color: white;
+.three-col {
+  padding: 3em 0;
+}
+
+.three-col h2 {
+  color: #87629a;
+}
+
+.two-col {
+  padding: 3em 0;
+  background-color: #136c72;
+  color: white;
 }
 
 .hero {
@@ -95,13 +104,6 @@ h2 {
   text-align: center;
 }
 
-.col + .col{
-    margin-left: 2em;
+.col+.col {
+  margin-left: 2em;
 }
-
-.container--light h2{
-    color: #87629A;
-}
-
-
-
