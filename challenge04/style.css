@@ -4,25 +4,18 @@
 - All text is in the text.md file
 
 // Requirements
-1. Refer to the design specs for the
-   overall layout 
-2. The image should line up with
-   the sidebar in the section
-   below
-
+   1. Get all the navigation items next to one another
+   2. Add a space between all the items
 */
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 21px;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
 }
 
 img {
@@ -30,32 +23,28 @@ img {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
   margin-top: 0;
 }
 
-h2 {
-  font-size: 36px;
-}
-
-.accent-color {
-  color: #87629a;
+.section-title {
+  color: #87629A;
 }
 
 .btn {
   display: inline-block;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #23424a;
+  text-transform: uppercase; 
+  color: #23424A;
   font-weight: 900;
-  background-color: #38cfd9;
-  padding: 0.75em 2em;
+  background-color: #38CFD9;
+  padding: .75em 2em;
   border-radius: 100px;
 }
 
 .btn:hover,
 .btn:focus {
-  opacity: 0.75;
+  opacity: .75; 
 }
 
 .container {
@@ -64,37 +53,82 @@ h2 {
   margin: 0 auto;
 }
 
+.container a{
+  align-self: center;
+}
+
 .row {
-  /* display: flex => flex container */
   display: flex;
   justify-content: space-between;
-
-  /* can't use yet */
-  /* gap: 100px; */
 }
 
 .col {
   /* these are now flex items */
   width: 100%;
-  padding: 1em 0;
 }
 
 .col + .col {
   margin-left: 30px;
 }
 
-.hero {
-  padding: 100px 0;
-  background-color: #23424a;
-  color: #fff;
+
+header {
+  background: #136c72;
+  padding: .5em 0;
 }
 
-.hero__text {
+nav{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.nav__list {
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav__list--primary{
+  margin: 0 auto;
+}
+
+.nav__item + .nav__item{
+  margin-left: 1em;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__link--button {
+  background: #fff;
+  color: #136c72;
+  padding: .25em 1em;
+  border-radius: 10em;
+}
+
+.nav__link:hover {
+  opacity: .75;
+}
+
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424A;
+  color: #FFF;
+}
+
+.hero__text { 
   width: 62%;
 }
 
 .hero__img {
-  height: 100%;
+  width: 32%;
   align-self: flex-start;
 }
 
@@ -112,8 +146,8 @@ h2 {
 
 .sidebar {
   width: 32%;
-  text-align: center;
-  background-color: #136c72;
-  color: white;
   padding: 1em;
+  text-align: center;
+  color: #fff;
+  background-color: #136c72;
 }
