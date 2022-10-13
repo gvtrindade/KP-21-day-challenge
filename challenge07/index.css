@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+}
+
+h1, h2{
+    font-family: 'Playfair Display', serif ;
+}
+
+.hero {
+  background-color: #f3eed9;
+  color: #824936;
+  padding: 10em;
+}
+
+.container {
+  max-width: 1128px;
+  padding: 4em;
+  margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.firstSection {
+  color: #824936;
+}
+
+.secondSection {
+  background-color: #222C2A;
+  color: #f3eed9;
+}
+
+.thirdSection {
+    background-color: #824936;
+    color: #f3eed9;
+}
+
+.item + .item{
+    margin-left: 2em;
+}
